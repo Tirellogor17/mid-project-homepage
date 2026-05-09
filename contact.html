@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Web Portofolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,40 +22,74 @@
 
     <main class="contact-container">
         <section class="page-header">
-            <h1>Kontak & Profil</h1>
+            <h1>Terminal Komunikasi</h1>
+            <p>Sistem terbuka untuk kolaborasi, diskusi teknologi, atau sekadar menyapa.</p>
         </section>
 
-        <div class="contact-wrapper">
-            <!-- Bagian Data Diri Mahasiswa -->
-            <aside class="student-info">
-                <h3>Data Diri Mahasiswa</h3>
-                <ul>
-                    <!-- UBAH DATA DI BAWAH INI -->
-                    <li><strong>Nama:</strong> [Nama Lengkap Anda]</li>
-                    <li><strong>NIM:</strong> [NIM Anda]</li>
-                    <li><strong>Mata Kuliah:</strong> Pemrograman Web (Mid Project)</li>
-                    <li><strong>Email:</strong> email.anda@domain.com</li>
-                </ul>
+        <div class="contact-grid">
+            <aside class="profile-card">
+                <div class="card-header">
+                    <div class="status-dot"></div>
+                    <span>Sistem Aktif</span>
+                </div>
+                
+                <div class="profile-header-inner">
+                    <img src="foto-profil.jpg" alt="Tirel Logor" class="mini-profile">
+                    <div class="profile-titles">
+                        <h3>Tirel Natanael Logor</h3>
+                        <p>ID: 230211060104</p>
+                    </div>
+                </div>
+
+                <div class="profile-details">
+                    <div class="detail-item">
+                        <span class="label">Prodi</span>
+                        <span class="value">Teknik Informatika</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Instansi</span>
+                        <span class="value">Univ. Sam Ratulangi</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Spesialisasi</span>
+                        <span class="value">Cyber & AI</span>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <p>Terhubung di luar sistem:</p>
+                    <div class="link-icons">
+                        <a href="#" title="LinkedIn">🌐</a>
+                        <a href="#" title="GitHub">💻</a>
+                        <a href="#" title="Instagram">📸</a>
+                    </div>
+                </div>
             </aside>
 
-            <!-- Formulir Kontak -->
-            <section class="contact-form-section">
-                <h3>Kirim Pesan</h3>
+            <section class="form-container">
+                <div class="form-header">
+                    <h3>Kirim Transmisi</h3>
+                </div>
                 <form id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Nama Anda:</label>
-                        <input type="text" id="name" name="name" placeholder="Masukkan nama" required>
+                    <div class="input-wrapper">
+                        <input type="text" id="name" name="name" placeholder=" " required>
+                        <label for="name">Identitas (Nama)</label>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email Anda:</label>
-                        <input type="email" id="email" name="email" placeholder="Masukkan email" required>
+                    
+                    <div class="input-wrapper">
+                        <input type="email" id="email" name="email" placeholder=" " required>
+                        <label for="email">Alamat Jalur (Email)</label>
                     </div>
-                    <div class="form-group">
-                        <label for="message">Pesan:</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Tulis pesan Anda..." required></textarea>
+
+                    <div class="input-wrapper">
+                        <textarea id="message" name="message" rows="4" placeholder=" " required></textarea>
+                        <label for="message">Isi Pesan / Transmisi</label>
                     </div>
-                    <!-- Tombol ini nanti akan kita beri aksi menggunakan Javascript -->
-                    <button type="submit" class="btn-submit">Kirim Pesan</button>
+
+                    <button type="submit" class="btn-glitch">
+                        <span class="btn-text">KIRIM PESAN</span>
+                        <span class="btn-decoration">_</span>
+                    </button>
                 </form>
             </section>
         </div>

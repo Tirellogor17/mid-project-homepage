@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery | Web Portofolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,30 +22,55 @@
 
     <main class="gallery-container">
         <section class="page-header">
-            <h1>Galeri & Proyek</h1>
-            <p>Dokumentasi tangkapan layar dari antarmuka proyek web, dashboard data, dan aktivitas pengembangan sistem.</p>
+            <h1>Galeri & Keseharian</h1>
+            <p>Kumpulan momen dari tugas kampus, hobi, hingga eksplorasi kreatif di depan layar.</p>
         </section>
 
-        <!-- Grid Galeri -->
-        <section class="image-grid">
-            <div class="gallery-item">
-                <!-- Ganti nama file src dengan gambar asli Anda nanti, misal: proyek1.jpg -->
-                <img src="gambar1.jpg" alt="Dashboard Data Warehouse RS">
-                <p>Implementasi Data Warehouse</p>
+        <!-- Grid Galeri bergaya Bento Box -->
+        <section class="bento-grid">
+            <!-- Item 1: Ukuran Besar (Fokus Utama) -->
+            <div class="bento-item item-large" onclick="bukaModal(this)">
+                <img src="meja-belajar.jpg" alt="Setup laptop dan tugas">
+                <div class="bento-overlay">
+                    <h3>Nugas Web</h3>
+                    <p>Ditemani kopi dan deadline semalaman</p>
+                </div>
             </div>
-            <div class="gallery-item">
-                <img src="gambar2.jpg" alt="Aplikasi Manajemen ASN">
-                <p>Sistem Manajemen Internal</p>
+            
+            <!-- Item 2: Ukuran Lebar Memanjang -->
+            <div class="bento-item item-wide" onclick="bukaModal(this)">
+                <img src="kegiatan-kampus.jpg" alt="Dunia Kampus">
+                <div class="bento-overlay">
+                    <h3>Kampus Life</h3>
+                    <p>Tugas kelompok, nongkrong, dan pertemanan</p>
+                </div>
             </div>
-            <div class="gallery-item">
-                <img src="gambar3.jpg" alt="Proyek Game Development">
-                <p>Eksplorasi Game Engine</p>
+            
+            <!-- Item 3: Ukuran Standar -->
+            <div class="bento-item" onclick="bukaModal(this)">
+                <img src="mabar-game.jpg" alt="Screenshot Gaming">
+                <div class="bento-overlay">
+                    <h3>Tournament E-Sport</h3>
+                    <p>Tournament Porprov Mobile Legends</p>
+                </div>
             </div>
-            <div class="gallery-item">
-                <img src="gambar4.jpg" alt="Otomatisasi Dokumen">
-                <p>Script Python Otomatisasi Persuratan</p>
+            
+            <!-- Item 4: Ukuran Standar -->
+            <div class="bento-item" onclick="bukaModal(this)">
+                <img src="eksplorasi-karya.jpg" alt="Eksplorasi Kreatif">
+                <div class="bento-overlay">
+                    <h3>Eksplorasi</h3>
+                    <p>Ngedit video & ngulik proyek sampingan</p>
+                </div>
             </div>
         </section>
+
+        <!-- Elemen Lightbox/Modal (Tetap sama) -->
+        <div id="imageModal" class="modal">
+            <span class="close-modal" onclick="tutupModal()">&times;</span>
+            <img class="modal-content" id="gambarPenuh">
+            <div id="caption"></div>
+        </div>
     </main>
 
     <footer>

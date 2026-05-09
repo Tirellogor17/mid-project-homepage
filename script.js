@@ -36,6 +36,35 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
+    // Fungsi untuk membuka gambar layar penuh di Galeri
+function bukaModal(elemen) {
+    const modal = document.getElementById("imageModal");
+    const gambarLayarPenuh = document.getElementById("gambarPenuh");
+    const teksCaption = document.getElementById("caption");
+    
+    // Mengambil data dari elemen yang diklik
+    const gambarYangDiklik = elemen.querySelector("img");
+    const teksYangDiklik = elemen.querySelector("p").innerText;
+
+    // Menampilkan ke modal
+    modal.classList.add("tampil");
+    gambarLayarPenuh.src = gambarYangDiklik.src;
+    teksCaption.innerHTML = teksYangDiklik;
+}
+
+// Fungsi untuk menutup modal
+function tutupModal() {
+    const modal = document.getElementById("imageModal");
+    modal.classList.remove("tampil");
+}
+
+// Menutup modal jika user mengklik area kosong (latar hitam)
+window.onclick = function(event) {
+    const modal = document.getElementById("imageModal");
+    if (event.target == modal) {
+        tutupModal();
+    }
+}
     /* 
      * CONTOH TAMBAHAN (Opsional): 
      * Efek sederhana di halaman Gallery
