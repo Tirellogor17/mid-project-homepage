@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Kriptografi | Web Portofolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .article-content { background: var(--bg-card); padding: 40px; border-radius: 20px; border: 1px solid var(--glass-border); margin-top: 20px; }
+        .article-content h2 { color: var(--accent); margin: 30px 0 15px; }
+        .article-content p { margin-bottom: 20px; color: var(--text-muted); text-align: justify; }
+        code { background: #000; color: #0f0; padding: 2px 6px; border-radius: 4px; font-family: monospace; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MyPortfolio</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Cryptography</h1>
+            <p>Seni Mengamankan Informasi di Dunia Digital</p>
+        </section>
+
+        <article class="article-content">
+            <img src="crypto-article.jpg" alt="Cryptography" style="width:100%; height:300px; object-fit:cover; border-radius:15px; margin-bottom:30px;">
+            
+            <h2>Enkripsi Simetris vs Asimetris</h2>
+            <p>Kriptografi adalah pilar utama keamanan informasi. Ada dua metode utama yang sering digunakan:</p>
+
+            <p>1. <strong>Enkripsi Simetris:</strong> Menggunakan kunci yang sama untuk mengunci dan membuka data. Contoh populernya adalah <code>AES (Advanced Encryption Standard)</code> yang sangat cepat untuk data besar.</p>
+            
+            <p>2. <strong>Enkripsi Asimetris:</strong> Menggunakan sepasang kunci (Public Key dan Private Key). Contohnya adalah <code>RSA</code>. Public key boleh disebar, tapi hanya Private key yang bisa membuka pesan tersebut.</p>
+
+            <h2>Masa Depan: Blockchain</h2>
+            <p>Teknologi Blockchain mengandalkan fungsi Hash (seperti SHA-256) untuk membuat rantai data yang tidak bisa diubah (immutability). Ini memastikan bahwa sekali data ditulis, tidak ada yang bisa memanipulasinya tanpa merusak seluruh rantai data.</p>
+
+            <a href="blog.html" class="read-more">&larr; Kembali ke Blog</a>
+        </article>
+    </main>
+
+    <footer><p>&copy; 2026 Mid Project Personal Homepage.</p></footer>
+</body>
+</html>
