@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Web Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MyPortfolio</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-container">
+        <section class="page-header">
+            <h1>Kontak & Profil</h1>
+        </section>
+
+        <div class="contact-wrapper">
+            <!-- Bagian Data Diri Mahasiswa -->
+            <aside class="student-info">
+                <h3>Data Diri Mahasiswa</h3>
+                <ul>
+                    <!-- UBAH DATA DI BAWAH INI -->
+                    <li><strong>Nama:</strong> [Nama Lengkap Anda]</li>
+                    <li><strong>NIM:</strong> [NIM Anda]</li>
+                    <li><strong>Mata Kuliah:</strong> Pemrograman Web (Mid Project)</li>
+                    <li><strong>Email:</strong> email.anda@domain.com</li>
+                </ul>
+            </aside>
+
+            <!-- Formulir Kontak -->
+            <section class="contact-form-section">
+                <h3>Kirim Pesan</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nama Anda:</label>
+                        <input type="text" id="name" name="name" placeholder="Masukkan nama" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Anda:</label>
+                        <input type="email" id="email" name="email" placeholder="Masukkan email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Pesan:</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tulis pesan Anda..." required></textarea>
+                    </div>
+                    <!-- Tombol ini nanti akan kita beri aksi menggunakan Javascript -->
+                    <button type="submit" class="btn-submit">Kirim Pesan</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mid Project Personal Homepage.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
